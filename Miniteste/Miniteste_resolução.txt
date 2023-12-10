@@ -1,0 +1,21 @@
+1.
+	a) opção 3
+	
+	b) 24, porque no final da string tem o '/0' em sizeof, e é 23 para strlen porque so conta a string original
+	
+	c) opção 1, porque em cada linha linha só estamos a fazer get de sizeof 5 espaços ou seja 4 chars mais o '/0' assim sendo as 3 strings a serem contadas vão ser divididas em 7 strings, mas depois são imprimidas fielmente pois dizemos para imprimir a linha toda.
+	
+	d) opção 3, porque ao somarmos mais dois dentro do strlen vamos estar a mover o pointer que le a string da posição 0 para a posição 2, logo o strlen vai ler menos 2 chars e por isso dar um tamanho menor de 21. Se o +2 estivesse fora do strlen é que ia somar 2 ao resultado do strlen, logo daria 25 nesse caso.
+	
+	e) opção 2, porque é necessário usar pointers para trocar diretamente os valores em vez das copias.
+	
+	f) Opção 4. O comando ipcs no ambiente Unix/Linux é usado para fornecer informações sobre os recursos de comunicação interprocessual (IPC), que são mecanismos que permitem a comunicação entre processos. Os recursos de IPC incluem filas de mensagens, semáforos e regiões de memória compartilhada. Quando você executa o comando ipcs, ele fornece informações sobre esses recursos, incluindo detalhes como identificadores, permissões, tamanho e outros
+	
+	g)     Opção 4 - int MemAttach (int id, void **pt);
+			id: Identificador da região de memória compartilhada. Esse identificador é geralmente obtido ao criar a região de memória compartilhada usando funções como shmget.
+			pt: Um ponteiro para um ponteiro (ponteiro duplo) que receberá o endereço da região de memória compartilhada após a operação de anexação.
+			O retorno int sugere que a função retorna um código de status, possivelmente indicando o sucesso ou falha da operação. Um valor comum é retornar 0 para sucesso e um valor diferente de zero para indicar um erro específico.
+			
+	h) opção 1,     Na primeira linha (printf("%s", fork());), ocorre a primeira chamada para fork(). Isso cria um novo processo filho. Ambos, o processo original e o processo filho, continuarão a 		execução a partir da linha seguinte ao fork().
+		 	Na segunda linha (printf("%s", fork());), ambas as instâncias do processo (pai e filho) fazem uma segunda chamada para fork(). Cada uma dessas chamadas gera um novo processo filho. Assim, para cada processo resultante da primeira chamada para fork(), você terá um novo processo filho.
+			Então, ao todo, haverá 2 duplicações de processos, resultando em 4 processos no total (incluindo o processo original e os três processos filhos). Desculpe novamente pela confusão anterior, e espero que esta explicação seja clara.
